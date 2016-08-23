@@ -61,7 +61,7 @@ public class Ejercicio2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 0, -1, -1));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 0, 0));
@@ -90,7 +90,11 @@ public class Ejercicio2 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtHijos, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 100, 40));
+
+        txtMontoB.setEditable(false);
         jPanel1.add(txtMontoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 180, 40));
+
+        txtMontoT.setEditable(false);
         jPanel1.add(txtMontoT, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 180, 40));
 
         txtSueldo.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -184,7 +188,7 @@ public class Ejercicio2 extends javax.swing.JFrame {
         txtMontoT.setText(""+res3);
         }
         
-        catch (Exception e){
+        catch (Exception b){
             JOptionPane.showMessageDialog(null,"Hay error en algunos digitos por favor corregir", "ERROR", JOptionPane.WARNING_MESSAGE);
                 }
         }
